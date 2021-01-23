@@ -16,7 +16,7 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/bin/bash";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -99,24 +99,24 @@ float alpha = 0.8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#000000", /*black*/
+	"#af2325", /*red*/
+	"#24a52f", /*green*/
+	"yellow3", /*yellow*/
+	"#3151e0", /*blue*/
+	"#a524a1", /*magenta*/ 
+	"#24a59d", /*cyan*/
+	"gray90",  /*white*/
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"gray50",  /*black*/
+	"#e03134", /*red*/
+	"#4be031", /*green*/
+	"yellow",  /*yellow*/
+	"#3171e0", /*blue*/
+	"#e031a8", /*magenta*/
+	"#31e0d4", /*cyan*/
+	"white",   /*white*/
 
 	[255] = 0,
 
