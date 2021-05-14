@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Hack:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Hack:pixelsize=12:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -94,28 +94,27 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.6;
+float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
 	"#000000", /*black*/
 	"#af2325", /*red*/
 	"#24a52f", /*green*/
-	"yellow3", /*yellow*/
+	"#f3fc44", /*yellow*/
 	"#3151e0", /*blue*/
 	"#a524a1", /*magenta*/ 
-	"#24a59d", /*cyan*/
+	"#5cb2ac", /*cyan*/
 	"gray90",  /*white*/
 
 	/* 8 bright colors */
 	"gray50",  /*black*/
 	"#e03134", /*red*/
 	"#4be031", /*green*/
-	"yellow",  /*yellow*/
+	"#eef470",  /*yellow*/
 	"#3171e0", /*blue*/
 	"#e031a8", /*magenta*/
-	"#31e0d4", /*cyan*/
+	"#7cddd7", /*cyan*/
 	"white",   /*white*/
 
 	[255] = 0,
@@ -149,8 +148,8 @@ static unsigned int cursorshape = 2;
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int cols = 84;
+static unsigned int rows = 25;
 
 /*
  * Default colour and shape of the mouse cursor
